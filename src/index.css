@@ -28,7 +28,7 @@ body {
   min-height: 350px;
   width: 500px;
   flex-direction: column;
-  gap: 50px;
+  gap: 30px;
   border-radius: 15px;
   background: #e3e3e3;
   /* box-shadow: 16px 16px 32px #c8c8c8, -16px -16px 32px #fefefe; */
@@ -122,3 +122,18 @@ body {
   background-color: rgb(0, 0, 0);
   color: white;
 }
+
+/* uyarılar */
+.feedback{
+  visibility: hidden;
+  color: red;
+}
+
+/* Bu CSS kodu, .is-invalid sınıfını içeren bir öğenin hemen sonrasındaki
+herhangi bir .feedback sınıfını seçecektir. + kullansaydık aradaki label'ı da seçiyordu */
+div .is-invalid ~ .feedback{
+  visibility: visible;
+}
+
+/* ~ Bu, belirli bir sıraya veya aradaki diğer öğelere bakmaksızın hedefi seçmenizi sağlar. */
+/* + Bu, belirtilen öğeden hemen sonra gelen ilk kardeş öğeyi seçer. */
