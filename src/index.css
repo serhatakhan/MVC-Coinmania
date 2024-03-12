@@ -84,17 +84,6 @@ body {
   border: 2px;
 }
 
-.inputBox1 input:valid ~ label,
-.inputBox1 input:focus ~ label {
-  transform: translateX(220px) translateY(-15px);
-  font-size: 0.8em;
-  padding: 5px 10px;
-  background: #000;
-  letter-spacing: 0.2em;
-  color: #fff;
-  border: 2px;
-}
-
 .inputBox input:valid,
 .inputBox input:focus,
 .inputBox1 input:valid,
