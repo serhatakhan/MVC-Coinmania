@@ -1,8 +1,12 @@
 import millify from "millify";
+import { useNavigate } from "react-router-dom";
 
 const CardView = ({ data }) => {
+
+  const navigate = useNavigate()
+
   return (
-    <div className="container-crd noselect">
+    <div onClick={()=> navigate(`/coin/${data.id}`)} className="container-crd noselect">
       <div className="canvas">
         <div className="tracker tr-1"></div>
         <div className="tracker tr-2"></div>
